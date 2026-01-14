@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>Simple Invoice System</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">  
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-dark">
+    <div class="bg-dark text-light">
+        <div class="container-fluid p-5">
+            <form class="form m-auto p-5 card bg-dark text-light border border-5 rounded-5 border-primary w-50" method="post" action="generate.php">
+                <div class="mb-4">
+                    <h2 class="fs-1 text-center">Invoice Generator</h2>
+                </div>
+                
+                <div id="items">
+                        <div class="item-row">
+                        <label class="form-label fs-3">Item Name</label>
+                        <input class="form-control bg-dark my-2 fs-3 text-light"
+                               type="text" name="items[]" required>
+            
+                        <label class="form-label fs-3">Quantity</label>
+                        <input class="form-control bg-dark my-2 fs-3 text-light"
+                               type="number" name="qty[]" min="1" required>
+            
+                        <label class="form-label fs-3">Price per Item</label>
+                        <input class="form-control bg-dark my-2 fs-3 text-light"
+                               type="number" name="price[]" step="0.01" required>
+            
+                        <hr class="border-secondary">
+                </div>
+
+                <p class="fs-4 mt-3">
+                    Items added: <span id="itemCount">0</span>
+                </p>
+
+                <input type="hidden" name="item_count" id="itemCountInput" value="1">
+                </div>
+                <button type="button"
+                class="btn btn-secondary fs-3 mt-5"
+                onclick="addItemRow()">
+                 + Add Item
+                </button>
+
+                <button type="submit" class="btn btn-primary mt-5 fs-3">
+                            Generate Invoice
+                </button>                
+        </form>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+function addItemRow() 
+{
+    const container = document.getElementById("items");
+    const template = container.querySelector(".item-row");
+    const additem = template.cloneNode(true);
+                
+    additem.querySelectorAll("input").forEach(input => {input.value = "";});
+                container.appendChild(additem);
+}
+</script>
+ 
+</body>
+</html>
