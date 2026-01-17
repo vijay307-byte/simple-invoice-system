@@ -2,6 +2,8 @@
 
 **Simple Invoice System** is a scalable, and lightweight application designed to streamline invoice generation for small businesses. Built system provides a modular platform for creating, and exporting professional invoices with minimal overhead.
 
+Made for hackathon : BitBuilders New Year Fun Code Race 2026  [Link](https://bitbuilders-code-race-jan-2026.devpost.com)
+
 **USED TOOLS/LANGUAGES**
 
 PHP, HTML5, CSS3, BOOTSTRAP FRAMEWORK, FONTS: OSWALD (FROM GOOGLE FONTS)
@@ -26,4 +28,5 @@ Made by vijay307-byte [link](https://github.com/vijay307-byte)
 **Visual Demonstration of the project**
 
 https://github.com/user-attachments/assets/7a76b28d-42cc-480c-809b-0251a150475d
+
 
