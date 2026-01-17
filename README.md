@@ -19,7 +19,7 @@ Made by vijay307-byte [link](https://github.com/vijay307-byte)
 ![Screenshot 2026-01-17 185845](https://github.com/user-attachments/assets/2253b570-92a0-4499-b43d-59436601568b)
 ## Downloading Invoice
 ![Screenshot 2026-01-17 185904](https://github.com/user-attachments/assets/1c1f7cd5-6e40-4ef6-ae9c-61cdad17596d)
-##
+## Download invoice as an image (png)
 <img width="676" height="376" alt="invoice" src="https://github.com/user-attachments/assets/59a38485-d82e-49b5-8df2-542a25f4d592" />
 
 
@@ -28,5 +28,6 @@ Made by vijay307-byte [link](https://github.com/vijay307-byte)
 **Visual Demonstration of the project**
 
 https://github.com/user-attachments/assets/7a76b28d-42cc-480c-809b-0251a150475d
+
 
 
