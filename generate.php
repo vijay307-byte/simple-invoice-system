@@ -15,7 +15,7 @@
 
 <?php
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'post') {
     
     $itemCount = isset($_POST['item_count']) ? (int)$_POST['item_count'] : 0;
 
